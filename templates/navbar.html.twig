@@ -1,0 +1,28 @@
+<div class="navigation">
+	<nav>
+		<ul>
+			<div>
+				<li>
+					<h1>Logo</h1>
+				</li>
+			</div>
+			<div>
+				{% if app.user %}
+					<div>
+						<p>{{ app.user.name }}</p>
+						<a href="{{ path('app_logout') }}"><img src="{{ asset('./build/img/icons/exit.png') }}"/></a>
+					</div>
+				{% else %}
+					<li>
+						<a href="{{ path('app_login') }}">Se connecter</a>
+					</li>
+					<li>
+						<a href="{{ path('app_register') }}">S'inscrire</a>
+					</li>
+				{% endif %}
+
+			</div>
+
+		</ul>
+	</nav>
+</div>

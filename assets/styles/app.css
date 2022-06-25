@@ -1,3 +1,113 @@
-body {
-    background-color: lightgray;
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", sans-serif;
 }
+
+body, html {
+  height: 100%;
+}
+
+.navigation {
+  height: 80px;
+  width: 100%;
+  -webkit-box-shadow: inset 0px -6px 15px -12px #989898;
+  box-shadow: inset 0px -6px 15px -12px #989898;
+}
+.navigation nav {
+  height: 100%;
+}
+.navigation nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.navigation nav ul div:first-child {
+  margin-left: 45px;
+}
+.navigation nav ul div:last-child {
+  display: flex;
+  flex-direction: row;
+}
+.navigation nav ul div:last-child li {
+  padding: 25px;
+}
+.navigation nav ul div:last-child li a {
+  text-decoration: none;
+  padding: 10px 25px;
+  color: white;
+  border-radius: 10px;
+}
+.navigation nav ul div:last-child li a:hover {
+  -webkit-box-shadow: inset 0px 0px 19px -14px #000000;
+  box-shadow: inset 0px 0px 19px -14px #000000;
+}
+.navigation nav ul div:last-child li:first-child a {
+  background-color: #E36A28;
+}
+.navigation nav ul div:last-child li:last-child a {
+  background-color: #009691;
+}
+.navigation nav ul div:last-child div {
+  padding-right: 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 80px;
+}
+.navigation nav ul div:last-child div a img {
+  width: 20px;
+  height: 20px;
+}
+
+.containerRegister {
+  height: 50%;
+}
+.containerRegister .heroRegister {
+  height: 60%;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+.containerRegister .heroRegister .blur {
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+}
+.containerRegister .heroRegister h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.containerRegister .formRegister {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containerRegister .formRegister form {
+  height: 60%;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.containerRegister .formRegister form input {
+  border: none;
+  border-bottom: 1px solid rgba(130, 130, 130, 0.451);
+  height: 40px;
+  outline: none;
+}
+.containerRegister .formRegister form input:focus {
+  border-bottom: 2px solid rgb(135, 135, 135);
+}
+
+/*# sourceMappingURL=app.css.map */
